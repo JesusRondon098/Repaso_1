@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.arrayPoint = void 0;
+var point_1 = require("./point");
+var myPoint1 = new point_1.Point(1, -6);
+var myPoint2 = new point_1.Point(1, -5);
+var mypoint4 = new point_1.Point(34, 7);
+exports.arrayPoint = [myPoint1, myPoint2, mypoint4];
+console.log(myPoint1.toString());
+console.log(myPoint1.distanceToOrigin());
+console.log(myPoint1.calculateDistance(myPoint2));
+console.log(myPoint1.calculateQuadrant());
+console.log(myPoint1.calculateNearest(exports.arrayPoint));
