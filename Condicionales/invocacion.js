@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var bucleFor_1 = require("./bucleFor");
+var condicionales_1 = require("./condicionales");
+var casa = ["Casa", "Coche", "Ciudad", "Cesta"];
+var barco = ["Barco", "Barca", "Bicicleta", "Balon", "Bisiesto", "Brasil"];
+var pais = ["Venezuela", "Veneno", "Voltaje"];
+console.log((0, condicionales_1.isEven)((0, bucleFor_1.add)(casa)));
+console.log((0, condicionales_1.isEven)((0, bucleFor_1.add)(barco)));
+console.log((0, condicionales_1.isEven)((0, bucleFor_1.add)(pais)));
