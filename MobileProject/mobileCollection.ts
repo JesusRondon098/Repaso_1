@@ -4,29 +4,32 @@ export class MobileCollection{
     private totalPrice: number
     constructor(mobiles : Mobile[]){
      this.mobiles =  mobiles
-     this.totalPrice
+     this.totalPrice = this.totalPriceCalculation()
     }
-    public getMobile(){
-        this.mobiles
+    public getMobile(): Mobile[]{
+        return this.mobiles
     }
-    public setMobile(newMobile){
+    public setMobile(newMobile):void{
        this.mobiles = newMobile
     }
-    public getTotalPrice(){
-        this.totalPrice
+    public getTotalPrice(): number{
+        return this.totalPrice
     }
-    public setTotalPrice(){
-        this.totalPrice = Mobile[4]
+    public setTotalPrice(newTotalPrice): void{
+        this.totalPrice = newTotalPrice
     }
-    public totalPriceCalculation(){
-        let x = []
-        for(let mob of this.mobiles){
-            x.push()
+    public printCollection(): string{
+        let x;
+        for(let i = 0; i<this.mobiles.length; i++){
+            x += this.mobiles[i].printClass()
         }
+        return x
     }
-    public printColection(){
-       return  `The Characteristics of the ${this.mobiles}
-         .Name : ${this.mobiles}
-         .Trademark : `   
+    public totalPriceCalculation(): number{
+       let x:number = 0;
+       for(let i = 0; i<this.mobiles.length; i++){
+        x += this.mobiles[i].getPrice();
+       }
+       return x
     }
 }
