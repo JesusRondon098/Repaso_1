@@ -10,4 +10,6 @@ let array = [mobile,mobile1,mobile2,mobile3]
 
 let myCollection = new MobileCollection(array)
 
-console.log(myCollection.printColection());
+console.log(myCollection.printCollection());
+console.log(myCollection.totalPriceCalculation());
+
