@@ -57,7 +57,8 @@ export class Mobile{
         return this.price
     }
     public printClass(){
-        return `"The characteritics of the mobile name are"
+        return `Mobiles
+        "The characteritics of the mobile name are"
                 .Name: ${this.name}
                 .Trademark: ${this.trademark}
                 .Model: ${this.model}

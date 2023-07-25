@@ -8,4 +8,5 @@ var mobile2 = new mobile_1.Mobile("Logitech", "CoolBOx", "m34", "Gris", 76);
 var mobile3 = new mobile_1.Mobile("Codenotch", "Madrid", "Bootcamp", "Azul", 7900);
 var array = [mobile, mobile1, mobile2, mobile3];
 var myCollection = new mobileCollection_1.MobileCollection(array);
-console.log(myCollection.printColection());
+console.log(myCollection.printCollection());
+console.log(myCollection.totalPriceCalculation());

@@ -55,7 +55,7 @@ var Mobile = /** @class */ (function () {
         return this.price;
     };
     Mobile.prototype.printClass = function () {
-        return "\"The characteritics of the mobile name are\"\n                .Name: ".concat(this.name, "\n                .Trademark: ").concat(this.trademark, "\n                .Model: ").concat(this.model, "\n                .Color: ").concat(this.color, "\n                .Price: ").concat(this.price);
+        return "Mobiles\n        \"The characteritics of the mobile name are\"\n                .Name: ".concat(this.name, "\n                .Trademark: ").concat(this.trademark, "\n                .Model: ").concat(this.model, "\n                .Color: ").concat(this.color, "\n                .Price: ").concat(this.price);
     };
     return Mobile;
 }());

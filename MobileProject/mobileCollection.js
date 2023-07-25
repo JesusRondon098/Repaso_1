@@ -1,33 +1,36 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.MobileCollection = void 0;
-var mobile_1 = require("./mobile");
 var MobileCollection = /** @class */ (function () {
     function MobileCollection(mobiles) {
         this.mobiles = mobiles;
-        this.totalPrice;
+        this.totalPrice = this.totalPriceCalculation();
     }
     MobileCollection.prototype.getMobile = function () {
-        this.mobiles;
+        return this.mobiles;
     };
     MobileCollection.prototype.setMobile = function (newMobile) {
         this.mobiles = newMobile;
     };
     MobileCollection.prototype.getTotalPrice = function () {
-        this.totalPrice;
+        return this.totalPrice;
     };
-    MobileCollection.prototype.setTotalPrice = function () {
-        this.totalPrice = mobile_1.Mobile[4];
+    MobileCollection.prototype.setTotalPrice = function (newTotalPrice) {
+        this.totalPrice = newTotalPrice;
+    };
+    MobileCollection.prototype.printCollection = function () {
+        var x;
+        for (var i = 0; i < this.mobiles.length; i++) {
+            x += this.mobiles[i].printClass();
+        }
+        return x;
     };
     MobileCollection.prototype.totalPriceCalculation = function () {
-        var x = [];
-        for (var _i = 0, _a = this.mobiles; _i < _a.length; _i++) {
-            var mob = _a[_i];
-            x.push();
+        var x = 0;
+        for (var i = 0; i < this.mobiles.length; i++) {
+            x += this.mobiles[i].getPrice();
         }
-    };
-    MobileCollection.prototype.printColection = function () {
-        return "The Characteristics of the ".concat(this.mobiles, "\n         .Name : ").concat(this.mobiles, "\n         .Trademark : ");
+        return x;
     };
     return MobileCollection;
 }());
